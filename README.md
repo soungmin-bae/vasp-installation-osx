@@ -5,8 +5,10 @@
 	
 
 ### 1. Basic instruction from offical website
-- https://www.vasp.at/wiki/index.php/Personal_computer_installation#Building_VASP_6.5.1_on_Mac_OS_X_(Apple_Silicon_M1/2/3/4)
-- brew install gfortran gcc fftw hdf5 openmpi openblas scalapack qd
+https://www.vasp.at/wiki/index.php/Personal_computer_installation#Building_VASP_6.5.1_on_Mac_OS_X_(Apple_Silicon_M1/2/3/4)
+- homebrew: https://brew.sh/
+After install homebrew, install following packages via brew. 
+brew install gfortran gcc fftw hdf5 openmpi openblas scalapack qd
 
 ### 2. makefile.include
 	# Default precompiler options
@@ -100,9 +102,16 @@
 	#CXXFLAGS_ML = -O3 -std=c++17 -pedantic-errors -Wall -Wextra
 	#INCLUDE_ML  = -I$(OPENBLAS_ROOT)/include
 
+NOTE: 
+1. I have specified gcc-14 to use /opt/homebrew/bin/gcc-14 directly. We have two types of gcc on the mac, /usr/bin/gcc and /opt/homebrew/bin/gcc-14. I choosed gcc-14 installed from homebrew. I am still not sure this does matter.
+2. I have specified OPENBLAS_ROOT, SCALAPACK_ROOT, and FFTW_ROOT, somehow this make linking libraries successful.
+3. I failed complining VASP several times once I have tried intel one api. Although an official guide exist, one api likely no longer support mac os officially. I could download dmg files of oneapi 2023, and could install ifort, icc, and etc., however it does not support mpi versions.
+   - https://stackoverflow.com/questions/77783400/intel-oneapi-for-mac-os-in-2024
+   - https://www.intel.com/content/www/us/en/docs/oneapi/installation-guide-macos/2024-0/overview.html
+
 ### 3. Troubleshooting 
 	ld: unsupported tapi file type '!tapi-tbd' in YAML file
-Likely encoutered pretty often. In my case, I could resolve the problem by setting export PATH="/usr/bin:$PATH" on zsh. (Or type export PATH="/usr/bin:$PATH" directly). 
+Likely encoutered pretty often, could be related to path. In my case, I could resolve the problem by setting export PATH="/usr/bin:$PATH" on zsh. (Or type export PATH="/usr/bin:$PATH" directly). 
 See links below. 
 - https://lattician.exblog.jp/32917378/
 - https://stackoverflow.com/questions/74318052/cant-compile-fortran-on-macos-monterey-ld-unsupported-tapi-file-type-tapi-t/75736450
