@@ -97,3 +97,13 @@ Memorandum for installation VASP package on mac os.
 	#CXX_ML      = mpic++
 	#CXXFLAGS_ML = -O3 -std=c++17 -pedantic-errors -Wall -Wextra
 	#INCLUDE_ML  = -I$(OPENBLAS_ROOT)/include
+
+### 3. Trouble shooting 
+	ld: unsupported tapi file type '!tapi-tbd' in YAML file
+Set export PATH="/usr/bin:$PATH" on zsh. See below. 
+https://lattician.exblog.jp/32917378/
+
+### 4. PATH information (exmaple)
+	echo $PATH
+	/opt/homebrew/bin:/usr/bin:/opt/homebrew/bin:/Users/username/opt/anaconda3/bin:/Users/username/opt/anaconda3/condabin:/usr/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin:/Users/username/bin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin/:/Users/username/bin
+
