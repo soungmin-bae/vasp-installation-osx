@@ -100,10 +100,14 @@ Memorandum for installation VASP package on mac os.
 
 ### 3. Trouble shooting 
 	ld: unsupported tapi file type '!tapi-tbd' in YAML file
-Set export PATH="/usr/bin:$PATH" on zsh. See below. 
+Likely encoutered pretty often. In my case, I could resolve the problem by setting export PATH="/usr/bin:$PATH" on zsh. (Or type export PATH="/usr/bin:$PATH" directly). 
+See links below. 
 https://lattician.exblog.jp/32917378/
+https://stackoverflow.com/questions/74318052/cant-compile-fortran-on-macos-monterey-ld-unsupported-tapi-file-type-tapi-t/75736450
+https://github.com/llvm/llvm-project/issues/55836
+https://stackoverflow.com/questions/63592445/ld-unsupported-tapi-file-type-tapi-tbd-in-yaml-file
 
-### 4. PATH information (exmaple)
+### 4. PATH information (my exmaple, could be more simplified)
 	echo $PATH
 	/opt/homebrew/bin:/usr/bin:/opt/homebrew/bin:/Users/username/opt/anaconda3/bin:/Users/username/opt/anaconda3/condabin:/usr/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin:/Users/username/bin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin/:/Users/username/bin
 
