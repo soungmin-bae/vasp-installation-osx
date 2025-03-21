@@ -101,7 +101,7 @@
 	#CXXFLAGS_ML = -O3 -std=c++17 -pedantic-errors -Wall -Wextra
 	#INCLUDE_ML  = -I$(OPENBLAS_ROOT)/include
 
-### 3. Trouble shooting 
+### 3. Troubleshooting 
 	ld: unsupported tapi file type '!tapi-tbd' in YAML file
 Likely encoutered pretty often. In my case, I could resolve the problem by setting export PATH="/usr/bin:$PATH" on zsh. (Or type export PATH="/usr/bin:$PATH" directly). 
 See links below. 
