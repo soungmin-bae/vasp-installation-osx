@@ -105,10 +105,10 @@
 	ld: unsupported tapi file type '!tapi-tbd' in YAML file
 Likely encoutered pretty often. In my case, I could resolve the problem by setting export PATH="/usr/bin:$PATH" on zsh. (Or type export PATH="/usr/bin:$PATH" directly). 
 See links below. 
-https://lattician.exblog.jp/32917378/
-https://stackoverflow.com/questions/74318052/cant-compile-fortran-on-macos-monterey-ld-unsupported-tapi-file-type-tapi-t/75736450
-https://github.com/llvm/llvm-project/issues/55836
-https://stackoverflow.com/questions/63592445/ld-unsupported-tapi-file-type-tapi-tbd-in-yaml-file
+- https://lattician.exblog.jp/32917378/
+- https://stackoverflow.com/questions/74318052/cant-compile-fortran-on-macos-monterey-ld-unsupported-tapi-file-type-tapi-t/75736450
+- https://github.com/llvm/llvm-project/issues/55836
+- https://stackoverflow.com/questions/63592445/ld-unsupported-tapi-file-type-tapi-tbd-in-yaml-file
 
 ### 4. PATH information (my exmaple, could be more simplified)
 	echo $PATH
