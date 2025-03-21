@@ -1,8 +1,8 @@
-# vasp installation on macOS
+# VASP package installation on macOS (Memorandum)
 	Date: 2024.03.21
 	Mac model: Apple M1 (2020)
 	OS X version: Sonoma 14.7.1（23H222）
-	Memorandum for installation VASP package on mac os. 
+	
 
 ### 1. Basic instruction from offical website
 	https://www.vasp.at/wiki/index.php/Personal_computer_installation#Building_VASP_6.5.1_on_Mac_OS_X_(Apple_Silicon_M1/2/3/4)
