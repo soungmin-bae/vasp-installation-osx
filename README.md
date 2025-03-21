@@ -121,3 +121,5 @@ See links below.
 	echo $PATH
 	/opt/homebrew/bin:/usr/bin:/opt/homebrew/bin:/Users/username/opt/anaconda3/bin:/Users/username/opt/anaconda3/condabin:/usr/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin:/Users/username/bin:/opt/homebrew/opt/llvm/bin:/usr/local/bin:/opt/homebrew/bin/:/Users/username/bin
 
+### 5. Execution 
+	mpirun -np 8 vasp_std (8 cores, for example; M1 has 8 cpu cores)
