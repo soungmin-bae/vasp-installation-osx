@@ -7,9 +7,10 @@
 ### 1. Basic instruction from offical website
 https://www.vasp.at/wiki/index.php/Personal_computer_installation#Building_VASP_6.5.1_on_Mac_OS_X_(Apple_Silicon_M1/2/3/4)
 - homebrew: https://brew.sh/
-After install homebrew, install following packages via brew. 
+After install homebrew, install following packages via brew.
+```
 brew install gfortran gcc fftw hdf5 openmpi openblas scalapack qd
-
+```
 ### 2. makefile.include
 	# Default precompiler options
 	CPP_OPTIONS = -DHOST=\"LinuxGNU\" \
